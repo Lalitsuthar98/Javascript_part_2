@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body style="background-color: #212121; color: #fff;"> 
+   <ul class="language">
+      <!-- <li>javascript</li> -->
+   </ul> 
+   <input type="text"  id="langnameuser" placeholder="Enter language">
+   <button onclick="setdata()"> Submit</button>
+</body>
+<script>   
+
+     
+    function addlanguage(langname){
+        const list = document.querySelector(".language")
+        console.log(list); 
+        const li = document.createElement('li');
+        li.innerText = langname;
+        list.appendChild(li);
+        document.getElementById('langnameuser').value="";
+    } 
+    function addoptimize(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        const list = document.querySelector(".language"); 
+        list.appendChild(li);
+        document.getElementById('langnameuser').value ="";
+    }
+    function setdata(){
+        const data = document.getElementById('langnameuser').value;
+        // addlanguage(data); 
+        addoptimize(data);
+    }     
+</script>
+</html>
