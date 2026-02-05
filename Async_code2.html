@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async code 2</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Lalit suthar</h1>
+    <button id="stop"> stop</button> 
+    <button id="start">Start</button>
+</body> 
+<script> 
+ const printName = function(){
+    console.log("Lalit suthar");
+ }
+//   setTimeout(()=>{
+//     console.log("Lalit suthar")
+//   },2000) 
+// setTimeout(printName,2000); 
+// document.querySelector('h1').innerHTML = "vishal suthar" 
+// const changeName = function(){
+//     document.querySelector('h1').innerHTML = "vishal suthar";
+// } 
+// const referece = setTimeout(changeName,3000); 
+// document.querySelector('button').addEventListener('click',(e)=>{
+//     clearTimeout(referece); 
+//     console.log("stop hogya ha")
+// })  
+// const intervalref = setInterval(()=>{
+//     console.log("heloo,Lalit suthar");
+// },1000) 
+// clearInterval(intervalref);  
+const sayDate = (str)=>{
+  console.log(`hello ${str}, and time ${Date.now()}`);
+}  
+const intervalref = setInterval(sayDate,2000,"hii");
+clearInterval(intervalref);  
+
+</script> 
+</html>

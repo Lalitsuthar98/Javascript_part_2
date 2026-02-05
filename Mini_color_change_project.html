@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #212121;
+        color: #ffffff;
+        transition: background-color 0.6s ease;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 40px 50px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        font-weight: 500;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      button {
+        padding: 12px 28px;
+        font-size: 1rem;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 600;
+      }
+
+      #start {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: white;
+      }
+
+      #start:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 114, 255, 0.5);
+      }
+
+      #stop {
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        color: white;
+      }
+
+      #stop:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(255, 75, 43, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Click Start to change the background color <br />
+        every second 🎨
+      </h1>
+
+      <div class="btn-group">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+
+    <script src="./mini_color_change_project.js"></script>
+  </body>
+</html>
