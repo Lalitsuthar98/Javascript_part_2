@@ -26,15 +26,15 @@
 // console.log(this);
 // const promise1 = new Promise() in this new keyword is constructor function also use to create the new context  
 
-function user(username,Age,place){
-    this.username  = username;
-    this.Age = Age;
-    this.place = place; 
-     return this;
-};
+// function user(username,Age,place){
+//     this.username  = username;
+//     this.Age = Age;
+//     this.place = place; 
+//      return this;
+// };
 
-const user1 =  new user("Lalit suthar",21,"udaipur"); 
-const user2 = new  user("vishal suthar",16,"Aidana");
-console.log(user1);
-console.log(user2); 
-// instanceof 
+// const user1 =  new user("Lalit suthar",21,"udaipur"); 
+// const user2 = new  user("vishal suthar",16,"Aidana");
+// console.log(user1);
+// console.log(user2); 
+// // instanceof 
