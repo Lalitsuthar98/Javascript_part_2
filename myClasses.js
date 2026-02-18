@@ -76,7 +76,7 @@ class user{
     }
 };
 const user3 = new user("vishal suthar");
-console.log(user3.createdID());
+console.log(user.createdID());
 
 
 
